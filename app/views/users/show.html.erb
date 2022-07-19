@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+  <%= flash[:notice] %>
+
 <html class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head>
     <title>Bookers2Ver2</title>
     <meta name="csrf-param" content="authenticity_token">
@@ -17,7 +19,7 @@
 　
 
         <div class="row">
-    <%= link_to edit_user_path(current_user.id),class:"btn btn-outline-secondary btn-block" do %>
+    <%= link_to edit_user_path(@user.id),class:"btn btn-outline-secondary btn-block" do %>
         <i class="fas fa-user-cog"></i>
        <%end%></div>
        
